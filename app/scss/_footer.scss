@@ -1,0 +1,113 @@
+/* 
+		_footer.scss
+*/
+
+/*
+										---FOOTER---
+*/
+
+
+
+#footer{
+	position: relative;
+	//color: rgba(black, 0.4);
+	//min-height: 150px;
+	line-height: 170%;
+	font-weight: 500;
+
+}
+.footer-socicons{
+	color: $color-1;
+	font-size: 18px;
+	ul{
+		display: flex;
+		@media (max-width: 991px) {
+			justify-content: center;
+		}
+	}
+	li{
+		margin-left: 2px;
+		transition: all 0.3s ease;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		a{
+			width: 100%;
+  		text-align: center;
+		}
+		&:hover{
+			background-color: $color-1;
+			color: white;
+			box-shadow: 0 2px 5px -1px $color-1 ;
+		}
+	}
+	.fa-paper-plane{
+	}
+}
+.footer-content{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $color-gray-1;
+	@media (min-width: 992px) {
+		.container{
+			padding-bottom: 30px;
+		}
+	}
+	@media (max-width: 991px) {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+}
+
+
+.footer-social{
+	ul{
+		display: flex;
+		@media (min-width: 992px) {
+			justify-content: flex-end;
+		}
+		@media (max-width: 991px) {
+			justify-content: center;
+			text-align: center;
+			.text{
+				display: none;
+			}
+			li{
+				margin-left: 0;
+			}
+		}
+	}
+	li{
+		display: flex;
+		align-items: center;
+		transition: all 0.3s ease;
+		margin-left: 30px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		&:hover{
+			color: $color-1;
+		}
+	}
+	.icm{
+		font-size: 20px;
+		margin-right: 15px;
+	}
+	.icm-linkedin-button{
+		font-size: 26px;
+	}
+}
+
+
+.copy-content{
+	font-size: 0.85em;
+}
+.copyright{
+	opacity: 0.3;
+}
+.dev{
+}
+

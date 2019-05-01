@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/additional.css">
+	<title>Title</title>
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Скрытые формы -->
+	<div class="hide">
+		<div id="form_def" class="form-def">
+			<div class="form-wrapper">
+
+				<!-- form-main -->
+				<div class="form-main">
+					<div class="text-center">
+						<h1 align="center">Оставьте свои контакты</h1>
+						<p>Мы свяжемся с вами в течении 10 минут</p>
+					</div>
+					<br>
+					<form action="" method="get" accept-charset="utf-8">
+						<label class="m-v-10 box-xs-10">
+							<div class="input-icon">
+								<span class="ls-icon-user"></span>
+								<input type="text" name="" value="" class="pie-form-control" placeholder="*ФИО">
+							</div>
+						</label>
+						<label class="m-v-10 box-xs-10">
+							<div class="input-icon">
+								<span class="ls-icon-user"></span>
+								<input type="text" name="" value="" class="pie-form-control" placeholder="*Номер телефона">
+							</div>
+						</label>
+						<div class="text-center">
+							<span class="btn-def m-v-15">
+								<button  type="submit">Отправить</button>
+							</span>
+							<br><br>
+							<p class="color-gray"><br><span class="color-1">*</span>Обязательное поле для заполнения</p>
+						</div>
+					</form>
+				</div>
+
+				<!-- SUCCESS -->
+				<!-- Убрать класс hide -->
+				<div class="form-success hide">
+					<div class="icon-content m-v-30">
+						<span class="fa fa-check"></span>
+					</div>
+					<div class="text-center">
+						<h1 align="center">Ваша заявка отправлена!</h1>
+						<p>Мы свяжемся с вами в течении 10 минут</p>
+					</div>
+					<div class="m-v-30 text-center">
+						<span class="btn-def">
+							<a href="javascript:;" data-fancybox-close>Хорошо</a>
+						</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="page">
+
+		<!-- HEADER -->
+		<div class="header-hidden"></div>
+		<header id="header" class="header-scroll hidden-sm hidden-xs" data-aos="fade">
+
+			<!-- HEADER TOP -->
+			<div class="header-top">
+				<div class="container relative">
+
+					<div class="row">
+
+						<div class="header-top-content">
+
+							<div class="header-logo p-h-15">
+								<a href="index.html" title="">
+									<img src="img/logo.svg" alt="">
+								</a>
+							</div>
+
+							<div class="menu p-h-15">
+								<nav>
+									<ul>
+										<li><a href="index.html" title=>Главная страница</a></li>
+										<li><a href="about.html" title=>О компании</a>
+											<ul class="sub-menu-1">
+												<li><a href="">Submenu</a></li>
+												<li><a href="">Submenu</a></li>
+												<li><a href="">Submenu</a></li>
+											</ul>
+										</li>
+										<li><a href="partners.html" title=>Партнеры</a></li>
+										<li><a href="traderoutes.html" title=>Торговые пункты и сто</a></li>
+										<li><a href="news.html" title=>Новости</a></li>
+										<li><a href="contacts.html" title=>Контакты</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="header-lang">
+								<ul class="list-inline">
+									<li><a href="">Рус</a></li>
+									<li><a href="">Eng</a></li>
+									<li><a href="">O’zb</a></li>
+								</ul>
+							</div>
+							<div class="search-nav-content">
+							  <form action="">
+							    <div class="col-md-12 search-input hide">
+							      <input type="text" name="" placeholder="Поиск">
+							    	<button type="submit"><i class="fa fa-search"></i></button>
+							    </div>
+							    <div class="search-input-content">
+							      <input type="checkbox" name="" id="search_status" class="none">
+							      <div class="shadow-wrapper"></div>
+							    	<label for="search_status" role="button"><i class="fa fa-search"></i><i class="fa fa-close"></i> Поиск</label>
+							    	<div class="input-box">
+							      	<input type="text" name="" class="search-input" placeholder="Поиск">
+							      	<button type="submit">Найти</button>
+							    	</div>
+							    </div>
+							  </form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- ./HEADER TOP -->
+		</header>
+		<!-- MIN MENU -->
+		<div id="min-menu" data-aos="fade">
+			<ul>
+				<li><a href="index.html" title=>Главная страница</a></li>
+				<li><a href="about.html" title=>О компании</a>
+					<ul>
+						<li><a href="">Submenu</a></li>
+						<li><a href="">Submenu</a></li>
+						<li><a href="">Submenu</a></li>
+					</ul>
+				</li>
+				<li><a href="partners.html" title=>Партнеры</a></li>
+				<li><a href="traderoutes.html" title=>Торговые пункты и сто</a></li>
+				<li><a href="news.html" title=>Новости</a></li>
+				<li><a href="contacts.html" title=>Контакты</a></li>
+			</ul>
+		</div>
+		<!-- MIN MENU HEADER -->
+		<div class="min-menu-header hidden-md hidden-lg">
+			<div class="wrapper-bg"></div>
+			<div class="col-xs-4">
+				<div class="min-menu-logo">
+					<div>
+						<a href="index.html" title="">
+							<div class="img" style="background-image: url('img/logo.svg');"></div>
+						</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-xs-6 justify-c-center align-center p-h-5" style="height: 70px	;">
+				<div>
+					<p><a href="tel:+998903451133" title="">+998 (90) <b>345-11-33</b></a><br></p>
+				</div>
+			</div>
+			<div class="min-menu-bar col-xs-2">
+				<a href="#min-menu">
+					<div class="bar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- MAIN -->
+		<main data-aos="fade" data-aos-delay="0">
+
+			<!-- bnr-slider -->
+			<div class="bnr-slider">
+				<div class="bnr-carousel flickity-dots-1 flickity-btn-1">
+					<div class="carousel-items flickity-main-slider color-white">
+
+						<figure class="box-xs-10">
+							<div class="img-content">
+								<div class="bg-shadow fuller z-index-1"></div>
+								<div class="img box-xs-10" style="background-image: url('img/slider/1.jpg');" ></div>
+							</div>
+							<div class="carousel-content z-index-1 relative">
+								<div class="container">
+									<div class="align-i-center relative p-h-15">
+										<div class="box-md-7 m-auto text-center text-content">
+											<div class="wrapper">
+												<h1>Ремонт, обслуживание и автозапчасти</h1>
+												<div class="hr-style-1"></div>
+												<p>Обеспечиваем круглосуточную помощь на дороге, в любой точке поломки</p>
+											</div>
+											<div class="btn-content p-t-60">
+												<span class="btn-opacity m-v-30 m-h-15">
+													<a href="about.html" title="">Подробнее</a>
+												</span>
+												<span class="btn-def m-v-30 m-h-15">
+													<a href="javascript:;" data-src="#form_def" data-fancybox="">Перезвоните мне</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</figure>
+						<figure class="box-xs-10">
+							<div class="img-content">
+								<div class="bg-shadow fuller z-index-1"></div>
+								<div class="img box-xs-10" style="background-image: url('img/slider/1.jpg');" ></div>
+							</div>
+							<div class="carousel-content z-index-1 relative">
+								<div class="container">
+									<div class="align-i-center relative p-h-15">
+										<div class="box-md-7 m-auto text-center text-content">
+											<div class="wrapper">
+												<h1>Ремонт, обслуживание и автозапчасти</h1>
+												<div class="hr-style-1"></div>
+												<p>Обеспечиваем круглосуточную помощь на дороге, в любой точке поломки</p>
+											</div>
+											<div class="btn-content p-t-60">
+												<span class="btn-opacity m-v-30 m-h-15">
+													<a href="about.html" title="">Подробнее</a>
+												</span>
+												<span class="btn-def m-v-30 m-h-15">
+													<a href="javascript:;" data-src="#form_def" data-fancybox="">Перезвоните мне</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</figure>
+						<figure class="box-xs-10">
+							<div class="img-content">
+								<div class="bg-shadow fuller z-index-1"></div>
+								<div class="img box-xs-10" style="background-image: url('img/slider/1.jpg');" ></div>
+							</div>
+							<div class="carousel-content z-index-1 relative">
+								<div class="container">
+									<div class="align-i-center relative p-h-15">
+										<div class="box-md-7 m-auto text-center text-content">
+											<div class="wrapper">
+												<h1>Ремонт, обслуживание и автозапчасти</h1>
+												<div class="hr-style-1"></div>
+												<p>Обеспечиваем круглосуточную помощь на дороге, в любой точке поломки</p>
+											</div>
+											<div class="btn-content p-t-60">
+												<span class="btn-opacity m-v-30 m-h-15">
+													<a href="about.html" title="">Подробнее</a>
+												</span>
+												<span class="btn-def m-v-30 m-h-15">
+													<a href="javascript:;" data-src="#form_def" data-fancybox="">Перезвоните мне</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</figure>
+
+					</div>
+				</div>
+			</div><!-- ./bnr-slider -->
+
+			<!-- short-about -->
+			<div class="short-about">
+				<div class="container p-v-md">
+					<div class="short-about-content col-md-9 p-h-15 m-v-30">
+						<div class="wrapper hover-color-1">
+							<div class="entry-header m-v-15">
+								<h1>Немного о нас</h1>
+							</div>
+							<div class="parag-gray m-v-30 text-item">
+							<p>
+								MERIDIAN TEMPO на сегодняшний день является одним из крупнейших в Узбекистане поставщиков смазочных материалов и автомобильных запасных частей из Европы, СНГ и стран центральной Азии. <br>
+								Компания была основана в феврале 2008 года.<br>
+								За десятилетний период было заключено огромное количество дистрибьюторских и эксклюзивных контрактов с ведущими производителями по всему миру, среди которых можно отметить таких гигантов-производителей смазочных материалов и их брендов как – LIQUI MOLY, FUCHS и SRS, а среди производителей автомобильных запасных частей как для конвейера так и для вторичного рынка – концерн ZF, KAYABA, NPR Europe и многие другие.<br>
+								Сегодня MERIDIAN TEMPO это не просто компания-импортер, а имя, известное по всему миру. Благодаря команде профессионалов, и отменной управленческой структуре, MERIDIAN TEMPO уверенно наращивает свой потенциал и реализует поставленные все поставленные цели.<br>
+								Мы- команда. Мы – MERIDIAN TEMPO.
+							</p>
+							</div>
+							<div class="m-v-30 text-right-md">
+								<a href="about.html"><b>Подробнее</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="short-about-innum text-center-sm col-md-3 p-h-15 m-v-30 figure-m-v-30">
+						<div class="wrapper">
+							<figure>
+								<p>Профессионализм</p>
+								<p>
+									<span class="char-big color-1">10 </span> <span class="char-normal color-black">/10</span>
+								</p>
+							</figure>
+							<figure>
+								<p>Гарантия качества</p>
+								<p>
+									<span class="char-big color-1">100%</span>
+								</p>
+							</figure>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- short-advantages -->
+			<div class="short-advantages img bg-size-cover" style="background-image: url('img/bg/bg-advantages.jpg');">
+				<div class="container p-v-md">
+					<div class="col-md-offset-3 col-md-9 m-v-30">
+						<div class="short-advantages-items boxes-3 parag-gray text-center figure-m-v-10">
+							<figure>
+								<div class="entry-header text-left-md">
+									<h1>
+										Чем мы <br> 
+										<span class="hidden-sm hidden-xs">&#160;&#160;&#160;&#160;&#160;</span> отличаемся
+										от конкурентов?
+									</h1>
+								</div>
+							</figure>
+							<figure>
+								<div class="wrapper">
+									<div>
+										<div class="img-content">
+											<span class="icm icm-vehicle">
+												<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span>
+											</span>
+										</div>
+										<div class="desc-content m-v-10">
+											<h4>Надежность</h4>
+											<p>Гарантия и ответственность на каждом этапе сотрудничества</p>
+										</div>
+									</div>
+								</div>
+							</figure>
+							<figure>
+								<div class="wrapper">
+									<div>
+										<div class="img-content">
+											<span class="icm icm-award">
+												<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+											</span>
+										</div>
+										<div class="desc-content m-v-10">
+											<h4>Профессионализм</h4>
+											<p>Более 20 лет опыта в профильной сфере</p>
+										</div>
+									</div>
+								</div>
+							</figure>
+							<figure>
+								<div class="wrapper">
+									<div>
+										<div class="img-content">
+											<span class="icm icm-discount">
+												<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+											</span>
+										</div>
+										<div class="desc-content m-v-10">
+											<h4>Лояльность</h4>
+											<p>Разнообразная бонусная система</p>
+										</div>
+									</div>
+								</div>
+							</figure>
+							<figure>
+								<div class="wrapper">
+									<div>
+										<div class="img-content">
+											<span class="icm icm-idea">
+												<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span>
+											</span>
+										</div>
+										<div class="desc-content m-v-10">
+											<h4>Индивидуальный подход</h4>
+											<p>Никаких шаблонов, персональный подход к каждому партнеру</p>
+										</div>
+									</div>
+								</div>
+							</figure>
+							<figure>
+								<div class="wrapper">
+									<div>
+										<div class="img-content">
+											<span class="icm icm-address">
+												<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+											</span>
+										</div>
+										<div class="desc-content m-v-10">
+											<h4>Территориальное превосходство</h4>
+											<p>Развитая дистрибьюторская структура</p>
+										</div>
+									</div>
+								</div>
+							</figure>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- short-partners -->
+			<div class="short-partners">
+				<div class="container p-v-md">
+					<div class="entry-header p-t-30">
+						<h1>Наши партнеры</h1>
+					</div>
+					<div class="row">
+						<div class="partners-items col-md-6 p-h-15 m-v-30">
+							<div class="short-partners-items boxes-3 figure-m-v-5">
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/1.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/2.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/3.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/4.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/5.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/6.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/7.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/8.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/9.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/10.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/11.png');"></div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="partners-article.html">
+										<div class="img-content">
+											<div class="img" style="background-image: url('img/partners/12.png');"></div>
+										</div>
+									</a>
+								</figure>
+
+							</div>
+						</div>
+						<div class="short-partners-imgs col-md-6 p-h-15 m-v-30">
+							<img src="img/other/partners-img-1.jpg">	
+							<img src="img/other/partners-img-2.jpg">	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- short-news -->
+			<div class="short-news">
+				<div class="container p-v-md">
+					<div class="entry-header p-t-30">
+						<h1>Последние новости компании</h1>
+					</div>
+					<div class="short-news-items boxes-3 figure-m-v-15 m-v-15 hover-color-1 hover-underline">
+						<figure>
+							<div class="img-content">
+								<div class="date-content">
+									<big>25</big><br>
+									<small>03.19</small>
+								</div>
+								<div class="img" style="background-image: url('img/other/short-news-1.jpg');"></div>
+							</div>
+							<div class="desc-content m-v-15">
+								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
+							</div>
+						</figure>
+						<figure>
+							<div class="img-content">
+								<div class="date-content">
+									<big>25</big><br>
+									<small>03.19</small>
+								</div>
+								<div class="img" style="background-image: url('img/other/short-news-2.jpg');"></div>
+							</div>
+							<div class="desc-content m-v-15">
+								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
+							</div>
+						</figure>
+						<figure>
+							<div class="img-content">
+								<div class="date-content">
+									<big>23</big><br>
+									<small>03.19</small>
+								</div>
+								<div class="img" style="background-image: url('img/other/short-news-3.jpg');"></div>
+							</div>
+							<div class="desc-content m-v-15">
+								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
+							</div>
+						</figure>
+						<figure>
+							<div class="img-content">
+								<div class="date-content">
+									<big>22</big><br>
+									<small>03.19</small>
+								</div>
+								<div class="img" style="background-image: url('img/other/short-news-4.jpg');"></div>
+							</div>
+							<div class="desc-content m-v-15">
+								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
+							</div>
+						</figure>
+						<figure>
+							<div class="img-content">
+								<div class="date-content">
+									<big>19</big><br>
+									<small>03.19</small>
+								</div>
+								<div class="img" style="background-image: url('img/other/short-news-5.jpg');"></div>
+							</div>
+							<div class="desc-content m-v-15">
+								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
+							</div>
+						</figure>
+						<figure>
+							<div class="img-content">
+								<div class="date-content">
+									<big>05</big><br>
+									<small>03.19</small>
+								</div>
+								<div class="img" style="background-image: url('img/other/short-news-1.jpg');"></div>
+							</div>
+							<div class="desc-content m-v-15">
+								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
+							</div>
+						</figure>
+					</div>
+					<div class="m-v-30 text-right-md">
+						<a href="news.html"><b>Все новости</b></a>
+					</div>
+				</div>
+			</div>
+
+			<!-- feedback -->
+			<div class="feedback img" style="background-image: url('img/bg/bg-feedback.jpg');">
+				<div class="container p-v-md">
+					<div class="feedback-content box-md-4 color-white">
+						<div>
+							<h1>Закажите бесплатную консультацию</h1>
+							<p>Оставьте заявку, мы перезвоним и проконсультируем:</p>
+							<span class="btn-def m-v-30">
+								<a href="javascript:;" data-src="#form_def" data-fancybox="">Перезвоните мне</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main><!-- ./MAIN -->
+		<!-- FOOTER -->
+		<footer id="footer" class="text-center-sm">
+
+			<div class="footer-content clearfix">
+				<div class="container">
+					<div class="footer-info col-md-6 p-h-15">
+						<h3>Контакты</h3>
+						<p>
+							<span class="text-nowrap">+998 71 <b>288 29 29;</b></span>   
+							<span class="text-nowrap">+998 71 <b>288 25-52;</b></span>  
+							<span class="text-nowrap">+998 71 <b>288 26-62</b></span><br>
+							mail@sitename.com
+						</p>
+					</div>
+					<div class="footer-social col-md-6 p-h-15 m-v-30">
+						<ul class="list">
+							<li><a href="" title="" target="_blank"><i class="icm icm-linkedin-button"></i><span class="text">LinkedIn</span></a></li>
+							<li><a href="" title="" target="_blank"><i class="icm icm-facebook-logo"></i><span class="text">Facebook</span></a></li>
+							<li><a href="" title="" target="_blank"><i class="icm icm-telegram"></i><span class="text">Telegram</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="copy-content text-center-sm color-black">
+				<div class="container clearfix">
+					<div class="row">
+						<div class="copyright col-md-6 p-v-10 p-h-15">
+							<p>© <time id="copydate"></time> Все права защищены.</p>
+							<script>copydate.innerText = new Date().getFullYear()</script>
+						</div>
+						<div class="dev col-md-6 hidden-xs p-h-15 hidden-sm text-right-md p-v-10">
+							<p>
+								<a href="https://www.life-style.uz" class="link" title="Создание и продвижение сайтов">Создание сайтов <em><span class="color-1">Life </span></em>Style</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- SCRIPTS -->
+	<script src="js/scripts.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
