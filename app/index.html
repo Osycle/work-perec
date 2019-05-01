@@ -78,7 +78,7 @@
 
 		<!-- HEADER -->
 		<div class="header-hidden"></div>
-		<header id="header" class="header-scroll hidden-sm hidden-xs" data-aos="fade">
+		<header id="header" class="hidden-sm hidden-xs" data-aos="fade">
 
 			<!-- HEADER TOP -->
 			<div class="header-top">
@@ -87,59 +87,92 @@
 					<div class="row">
 
 						<div class="header-top-content">
-
-							<div class="header-logo p-h-15">
-								<a href="index.html" title="">
-									<img src="img/logo.svg" alt="">
-								</a>
-							</div>
-
 							<div class="menu p-h-15">
 								<nav>
 									<ul>
-										<li><a href="index.html" title=>Главная страница</a></li>
-										<li><a href="about.html" title=>О компании</a>
-											<ul class="sub-menu-1">
-												<li><a href="">Submenu</a></li>
-												<li><a href="">Submenu</a></li>
-												<li><a href="">Submenu</a></li>
-											</ul>
-										</li>
-										<li><a href="partners.html" title=>Партнеры</a></li>
-										<li><a href="traderoutes.html" title=>Торговые пункты и сто</a></li>
-										<li><a href="news.html" title=>Новости</a></li>
+										<li><a href="pavf.html" title=>Владельцам товаров и услуг</a></li>
 										<li><a href="contacts.html" title=>Контакты</a></li>
+										<li><a href="conditions.html" title=>Условия</a></li>
 									</ul>
 								</nav>
 							</div>
-							<div class="header-lang">
-								<ul class="list-inline">
-									<li><a href="">Рус</a></li>
-									<li><a href="">Eng</a></li>
-									<li><a href="">O’zb</a></li>
+							<div class="header-address p-h-15 text-right-md">
+								<i class="fa fa-map-marker color-3 fa-1-5x va-middle"></i>
+								<span class="va-middle p-l-10">г.Ташкент, ул. Садика Азимова</span>
+							</div>
+							<div class="header-lang p-h-15">
+								<input type="checkbox" class="hide" id="langlist">
+								<label for="langlist" role="button">
+									<p><span>Русский</span> <i class="p-l-10 fa fa-angle-down"></i></p>
+								</label>
+								<ul class="hide-list">
+									<li><a href="">Узбекский</a></li>
 								</ul>
 							</div>
-							<div class="search-nav-content">
-							  <form action="">
-							    <div class="col-md-12 search-input hide">
-							      <input type="text" name="" placeholder="Поиск">
-							    	<button type="submit"><i class="fa fa-search"></i></button>
-							    </div>
-							    <div class="search-input-content">
-							      <input type="checkbox" name="" id="search_status" class="none">
-							      <div class="shadow-wrapper"></div>
-							    	<label for="search_status" role="button"><i class="fa fa-search"></i><i class="fa fa-close"></i> Поиск</label>
-							    	<div class="input-box">
-							      	<input type="text" name="" class="search-input" placeholder="Поиск">
-							      	<button type="submit">Найти</button>
-							    	</div>
-							    </div>
-							  </form>
+							<div class="header-signin">
+								<span class="btn-def">
+									<a href="">Вход</a>
+								</span>
+								<span class="btn-def bg-color-3 color-white">
+									<a href="">Регистрация</a>
+								</span>
+							</div>
+							<div class="socicons text-nowrap p-h-15 text-right-md">
+								<ul>
+									<li><a href="" title="" target="_blank"><i class="fa fa-paper-plane"></i></a></li>
+									<li><a href="" title="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="" title="" target="_blank"><i class="fa fa-vk"></i></a></li>
+								</ul>
 							</div>
 						</div>
+
 					</div>
 				</div>
-			</div><!-- ./HEADER TOP -->
+			</div>
+
+			<!-- HEADER BOTTOM -->
+			<div class="header-bottom">
+				<div class="container relative">
+
+					<div class="row">
+
+						<div class="header-bottom-content">
+							<div class="header-logo p-h-15">
+								<a href="index.html" title="">
+									<img src="img/logo.png" alt="">
+								</a>
+							</div>
+							<div class="search-container">
+								<form action="" method="post" accept-charset="utf-8">
+									<div class="search-container-wrapper">
+										<div class="search-nav-content">
+											<div class="search-input relative">
+												<i class="fa fa-search"></i>
+												<input type="text" name="search" id="searchmap_input" placeholder="Что вы ищете?">
+											</div>
+										</div>
+										<div class="select-content">
+											<select class="js-select search-hide box-xs-10">
+												<option>Ташкент</option>
+												<option>sub select 1</option>
+												<option>sub select 2</option>
+												<option>sub select 3</option>
+											</select>
+										</div>
+										<span class="btn-def">
+											<button type="submit" class="p-h-50">Искать</button>
+										</span>
+									</div>
+
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
 		</header>
 		<!-- MIN MENU -->
 		<div id="min-menu" data-aos="fade">
@@ -188,437 +221,560 @@
 		<!-- MAIN -->
 		<main data-aos="fade" data-aos-delay="0">
 
-			<!-- bnr-slider -->
-			<div class="bnr-slider">
-				<div class="bnr-carousel flickity-dots-1 flickity-btn-1">
-					<div class="carousel-items flickity-main-slider color-white">
+			<div class="container">
+				<div class="row">
 
-						<figure class="box-xs-10">
-							<div class="img-content">
-								<div class="bg-shadow fuller z-index-1"></div>
-								<div class="img box-xs-10" style="background-image: url('img/slider/1.jpg');" ></div>
-							</div>
-							<div class="carousel-content z-index-1 relative">
-								<div class="container">
-									<div class="align-i-center relative p-h-15">
-										<div class="box-md-7 m-auto text-center text-content">
-											<div class="wrapper">
-												<h1>Ремонт, обслуживание и автозапчасти</h1>
-												<div class="hr-style-1"></div>
-												<p>Обеспечиваем круглосуточную помощь на дороге, в любой точке поломки</p>
-											</div>
-											<div class="btn-content p-t-60">
-												<span class="btn-opacity m-v-30 m-h-15">
-													<a href="about.html" title="">Подробнее</a>
-												</span>
-												<span class="btn-def m-v-30 m-h-15">
-													<a href="javascript:;" data-src="#form_def" data-fancybox="">Перезвоните мне</a>
-												</span>
-											</div>
+					<div class="column-1 col-md-9 p-h-15 m-v-30">
+
+						<!-- bnr-slider -->
+						<div class="bnr-slider">
+							<div class="bnr-carousel">
+								<div class="carousel-items flickity-main-slider color-white">
+
+									<figure class="box-xs-10">
+										<div class="img-content">
+											<div class="bg-shadow fuller z-index-1"></div>
+											<div class="img box-xs-10" style="background-image: url('img/slider/1.jpg');" ></div>
 										</div>
-									</div>
+									</figure>
+
 								</div>
 							</div>
-						</figure>
-						<figure class="box-xs-10">
-							<div class="img-content">
-								<div class="bg-shadow fuller z-index-1"></div>
-								<div class="img box-xs-10" style="background-image: url('img/slider/1.jpg');" ></div>
-							</div>
-							<div class="carousel-content z-index-1 relative">
-								<div class="container">
-									<div class="align-i-center relative p-h-15">
-										<div class="box-md-7 m-auto text-center text-content">
-											<div class="wrapper">
-												<h1>Ремонт, обслуживание и автозапчасти</h1>
-												<div class="hr-style-1"></div>
-												<p>Обеспечиваем круглосуточную помощь на дороге, в любой точке поломки</p>
+						</div>
+
+						<!-- rubrics -->
+						<div class="rubrics">
+							<div class="rubrics-items boxes-3 figure-m-v-15 m-v-30">
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-steering-wheel-car-part-controller"></span>
 											</div>
-											<div class="btn-content p-t-60">
-												<span class="btn-opacity m-v-30 m-h-15">
-													<a href="about.html" title="">Подробнее</a>
-												</span>
-												<span class="btn-def m-v-30 m-h-15">
-													<a href="javascript:;" data-src="#form_def" data-fancybox="">Перезвоните мне</a>
-												</span>
+											<div class="desc-content">
+												<h5>Автомобили <span class="cnt-item">(41)</span></h5>
 											</div>
 										</div>
-									</div>
-								</div>
-							</div>
-						</figure>
-						<figure class="box-xs-10">
-							<div class="img-content">
-								<div class="bg-shadow fuller z-index-1"></div>
-								<div class="img box-xs-10" style="background-image: url('img/slider/1.jpg');" ></div>
-							</div>
-							<div class="carousel-content z-index-1 relative">
-								<div class="container">
-									<div class="align-i-center relative p-h-15">
-										<div class="box-md-7 m-auto text-center text-content">
-											<div class="wrapper">
-												<h1>Ремонт, обслуживание и автозапчасти</h1>
-												<div class="hr-style-1"></div>
-												<p>Обеспечиваем круглосуточную помощь на дороге, в любой точке поломки</p>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-house"></span>
 											</div>
-											<div class="btn-content p-t-60">
-												<span class="btn-opacity m-v-30 m-h-15">
-													<a href="about.html" title="">Подробнее</a>
-												</span>
-												<span class="btn-def m-v-30 m-h-15">
-													<a href="javascript:;" data-src="#form_def" data-fancybox="">Перезвоните мне</a>
-												</span>
+											<div class="desc-content">
+												<h5>Бытовые услуги <span class="cnt-item">(50)</span></h5>
 											</div>
 										</div>
-									</div>
-								</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-medical-book-health"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Медицина <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-armchair"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Мебель <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-bulb"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Информационные <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-masks"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Досуг и отдых <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-building"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Иностранные компании <span class="cnt-item">(8)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-contract"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Административные органы <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-receipt"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Банки и бизнес услуги <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-washing-machine"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Бытовая техника <span class="cnt-item">(8)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-map"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Гостиницы и туризм <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-wrench"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Инструменты <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-water"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Коммунальные услуги <span class="cnt-item">(8)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-desktop"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Компьютеры и оргтехника <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-fabric"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Легкая промышленность <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-microscope"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Научные организации <span class="cnt-item">(8)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-valve"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Нефтегазовая отрасль <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-software"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Оборудование <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-shield"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Охранные услуги <span class="cnt-item">(8)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-fast-food"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Пищевое производство <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-pick"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Полезные ископаемые <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-tower"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Почта и связь <span class="cnt-item">(8)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-university"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Представительства <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-megaphone"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Реклама, полиграфия <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-champagne-glass"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Рестораны и кафе <span class="cnt-item">(8)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-cow"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Сельское хозяйство <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-newspaper"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Сми <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-support"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Справочные службы <span class="cnt-item">(8)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-sketch"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Строительство и ремонт <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-shopping-cart"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Товары <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-air-freight"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Транспорт <span class="cnt-item">(8)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-box"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Упаковка <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-laboratory"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Химическая продукция <span class="cnt-item">(15)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-solar-energy"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Энергетика и приборы <span class="cnt-item">(8)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<div class="wrapper">
+											<div class="img-content">
+												<span class="icm icm-auction"></span>
+											</div>
+											<div class="desc-content">
+												<h5>Юридические услуги <span class="cnt-item">(12)</span></h5>
+											</div>
+										</div>
+									</a>
+								</figure>
+
 							</div>
-						</figure>
+						</div>
 
 					</div>
+
 				</div>
-			</div><!-- ./bnr-slider -->
+			</div>
 
-			<!-- short-about -->
-			<div class="short-about">
-				<div class="container p-v-md">
-					<div class="short-about-content col-md-9 p-h-15 m-v-30">
-						<div class="wrapper hover-color-1">
-							<div class="entry-header m-v-15">
-								<h1>Немного о нас</h1>
-							</div>
-							<div class="parag-gray m-v-30 text-item">
-							<p>
-								MERIDIAN TEMPO на сегодняшний день является одним из крупнейших в Узбекистане поставщиков смазочных материалов и автомобильных запасных частей из Европы, СНГ и стран центральной Азии. <br>
-								Компания была основана в феврале 2008 года.<br>
-								За десятилетний период было заключено огромное количество дистрибьюторских и эксклюзивных контрактов с ведущими производителями по всему миру, среди которых можно отметить таких гигантов-производителей смазочных материалов и их брендов как – LIQUI MOLY, FUCHS и SRS, а среди производителей автомобильных запасных частей как для конвейера так и для вторичного рынка – концерн ZF, KAYABA, NPR Europe и многие другие.<br>
-								Сегодня MERIDIAN TEMPO это не просто компания-импортер, а имя, известное по всему миру. Благодаря команде профессионалов, и отменной управленческой структуре, MERIDIAN TEMPO уверенно наращивает свой потенциал и реализует поставленные все поставленные цели.<br>
-								Мы- команда. Мы – MERIDIAN TEMPO.
-							</p>
-							</div>
-							<div class="m-v-30 text-right-md">
-								<a href="about.html"><b>Подробнее</b></a>
-							</div>
-						</div>
-					</div>
-					<div class="short-about-innum text-center-sm col-md-3 p-h-15 m-v-30 figure-m-v-30">
-						<div class="wrapper">
-							<figure>
-								<p>Профессионализм</p>
-								<p>
-									<span class="char-big color-1">10 </span> <span class="char-normal color-black">/10</span>
-								</p>
-							</figure>
-							<figure>
-								<p>Гарантия качества</p>
-								<p>
-									<span class="char-big color-1">100%</span>
-								</p>
-							</figure>
-
-						</div>
+			<!-- short-services -->
+			<div class="short-services">
+				<div class="container p-b-15">
+					<div class="short-services-items boxes-3 figure-m-v-15">
+						<figure>
+							<a href="">
+								<div class="img-content">
+									<div class="img" style="background-image: url('img/other/short-services-1.jpg');"></div>
+								</div>
+							</a>
+						</figure>
+						<figure>
+							<a href="">
+								<div class="img-content">
+									<div class="img" style="background-image: url('img/other/short-services-2.jpg');"></div>
+								</div>
+							</a>
+						</figure>
+						<figure>
+							<a href="">
+								<div class="img-content">
+									<div class="img" style="background-image: url('img/other/short-services-3.jpg');"></div>
+								</div>
+							</a>
+						</figure>
 					</div>
 				</div>
 			</div>
 
-			<!-- short-advantages -->
-			<div class="short-advantages img bg-size-cover" style="background-image: url('img/bg/bg-advantages.jpg');">
-				<div class="container p-v-md">
-					<div class="col-md-offset-3 col-md-9 m-v-30">
-						<div class="short-advantages-items boxes-3 parag-gray text-center figure-m-v-10">
-							<figure>
-								<div class="entry-header text-left-md">
-									<h1>
-										Чем мы <br> 
-										<span class="hidden-sm hidden-xs">&#160;&#160;&#160;&#160;&#160;</span> отличаемся
-										от конкурентов?
-									</h1>
-								</div>
-							</figure>
-							<figure>
-								<div class="wrapper">
-									<div>
-										<div class="img-content">
-											<span class="icm icm-vehicle">
-												<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span>
-											</span>
-										</div>
-										<div class="desc-content m-v-10">
-											<h4>Надежность</h4>
-											<p>Гарантия и ответственность на каждом этапе сотрудничества</p>
-										</div>
-									</div>
-								</div>
-							</figure>
-							<figure>
-								<div class="wrapper">
-									<div>
-										<div class="img-content">
-											<span class="icm icm-award">
-												<span class="path1"></span><span class="path2"></span><span class="path3"></span>
-											</span>
-										</div>
-										<div class="desc-content m-v-10">
-											<h4>Профессионализм</h4>
-											<p>Более 20 лет опыта в профильной сфере</p>
-										</div>
-									</div>
-								</div>
-							</figure>
-							<figure>
-								<div class="wrapper">
-									<div>
-										<div class="img-content">
-											<span class="icm icm-discount">
-												<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
-											</span>
-										</div>
-										<div class="desc-content m-v-10">
-											<h4>Лояльность</h4>
-											<p>Разнообразная бонусная система</p>
-										</div>
-									</div>
-								</div>
-							</figure>
-							<figure>
-								<div class="wrapper">
-									<div>
-										<div class="img-content">
-											<span class="icm icm-idea">
-												<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span>
-											</span>
-										</div>
-										<div class="desc-content m-v-10">
-											<h4>Индивидуальный подход</h4>
-											<p>Никаких шаблонов, персональный подход к каждому партнеру</p>
-										</div>
-									</div>
-								</div>
-							</figure>
-							<figure>
-								<div class="wrapper">
-									<div>
-										<div class="img-content">
-											<span class="icm icm-address">
-												<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
-											</span>
-										</div>
-										<div class="desc-content m-v-10">
-											<h4>Территориальное превосходство</h4>
-											<p>Развитая дистрибьюторская структура</p>
-										</div>
-									</div>
-								</div>
-							</figure>
-
-
-						</div>
+			<div class="short-ask">
+				<div class="container">
+					<div class="entry-header">
+						<h1>Вопросы и <span class="color-1">ответы</span></h1>
 					</div>
-				</div>
-			</div>
+					<div class="vacancy-accordion panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-
-			<!-- short-partners -->
-			<div class="short-partners">
-				<div class="container p-v-md">
-					<div class="entry-header p-t-30">
-						<h1>Наши партнеры</h1>
-					</div>
-					<div class="row">
-						<div class="partners-items col-md-6 p-h-15 m-v-30">
-							<div class="short-partners-items boxes-3 figure-m-v-5">
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/1.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/2.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/3.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/4.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/5.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/6.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/7.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/8.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/9.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/10.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/11.png');"></div>
-										</div>
-									</a>
-								</figure>
-								<figure>
-									<a href="partners-article.html">
-										<div class="img-content">
-											<div class="img" style="background-image: url('img/partners/12.png');"></div>
-										</div>
-									</a>
-								</figure>
-
-							</div>
-						</div>
-						<div class="short-partners-imgs col-md-6 p-h-15 m-v-30">
-							<img src="img/other/partners-img-1.jpg">	
-							<img src="img/other/partners-img-2.jpg">	
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- short-news -->
-			<div class="short-news">
-				<div class="container p-v-md">
-					<div class="entry-header p-t-30">
-						<h1>Последние новости компании</h1>
-					</div>
-					<div class="short-news-items boxes-3 figure-m-v-15 m-v-15 hover-color-1 hover-underline">
-						<figure>
-							<div class="img-content">
-								<div class="date-content">
-									<big>25</big><br>
-									<small>03.19</small>
-								</div>
-								<div class="img" style="background-image: url('img/other/short-news-1.jpg');"></div>
-							</div>
-							<div class="desc-content m-v-15">
-								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
-							</div>
-						</figure>
-						<figure>
-							<div class="img-content">
-								<div class="date-content">
-									<big>25</big><br>
-									<small>03.19</small>
-								</div>
-								<div class="img" style="background-image: url('img/other/short-news-2.jpg');"></div>
-							</div>
-							<div class="desc-content m-v-15">
-								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
-							</div>
-						</figure>
-						<figure>
-							<div class="img-content">
-								<div class="date-content">
-									<big>23</big><br>
-									<small>03.19</small>
-								</div>
-								<div class="img" style="background-image: url('img/other/short-news-3.jpg');"></div>
-							</div>
-							<div class="desc-content m-v-15">
-								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
-							</div>
-						</figure>
-						<figure>
-							<div class="img-content">
-								<div class="date-content">
-									<big>22</big><br>
-									<small>03.19</small>
-								</div>
-								<div class="img" style="background-image: url('img/other/short-news-4.jpg');"></div>
-							</div>
-							<div class="desc-content m-v-15">
-								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
-							</div>
-						</figure>
-						<figure>
-							<div class="img-content">
-								<div class="date-content">
-									<big>19</big><br>
-									<small>03.19</small>
-								</div>
-								<div class="img" style="background-image: url('img/other/short-news-5.jpg');"></div>
-							</div>
-							<div class="desc-content m-v-15">
-								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
-							</div>
-						</figure>
-						<figure>
-							<div class="img-content">
-								<div class="date-content">
-									<big>05</big><br>
-									<small>03.19</small>
-								</div>
-								<div class="img" style="background-image: url('img/other/short-news-1.jpg');"></div>
-							</div>
-							<div class="desc-content m-v-15">
-								<p><a href="news-article.html">Эта новость содержит видео-материалы Лимузины и микроавтобусы AURUS начали поступать в правительственный гараж</a></p>
-							</div>
-						</figure>
-					</div>
-					<div class="m-v-30 text-right-md">
-						<a href="news.html"><b>Все новости</b></a>
-					</div>
-				</div>
-			</div>
-
-			<!-- feedback -->
-			<div class="feedback img" style="background-image: url('img/bg/bg-feedback.jpg');">
-				<div class="container p-v-md">
-					<div class="feedback-content box-md-4 color-white">
-						<div>
-							<h1>Закажите бесплатную консультацию</h1>
-							<p>Оставьте заявку, мы перезвоним и проконсультируем:</p>
-							<span class="btn-def m-v-30">
-								<a href="javascript:;" data-src="#form_def" data-fancybox="">Перезвоните мне</a>
-							</span>
-						</div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq-1" aria-expanded="true">Манеджер<i class="fa fa-angle-right"></i></a>
+					      </h4>
+					    </div>
+					    <div id="faq-1" class="panel-collapse collapse in" role="tabpanel">
+					      <div class="panel-body text-left p-v-10 ">
+									<p>В этом блоке мы рекомендуем разместить информацию о Вашей организации, подчеркнуть ее значимость и надежность на рынке оказываемых услуг или предлагаемых товаров.</p>
+									<p>Примечание. Обращаем Ваше внимание, что текстовая информация на сайте должна быть индивидуальной, не скопированной с других интернет-ресурсов, о чем указано в рекомендациях Яндекса: «Мы стараемся не индексировать или не ранжировать высоко сайты, копирующие информацию с других ресурсов и не создающие оригинального контента или сервиса».</p>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#faq-2" aria-expanded="true">Сантехник<i class="fa fa-angle-right"></i></a>
+					      </h4>
+					    </div>
+					    <div id="faq-2" class="panel-collapse collapse" role="tabpanel">
+					      <div class="panel-body text-left p-v-10 ">
+									<p>В этом блоке мы рекомендуем разместить информацию о Вашей организации, подчеркнуть ее значимость и надежность на рынке оказываемых услуг или предлагаемых товаров.</p>
+									<p>Примечание. Обращаем Ваше внимание, что текстовая информация на сайте должна быть индивидуальной, не скопированной с других интернет-ресурсов, о чем указано в рекомендациях Яндекса: «Мы стараемся не индексировать или не ранжировать высоко сайты, копирующие информацию с других ресурсов и не создающие оригинального контента или сервиса».</p>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#faq-3" aria-expanded="true">Сталяр<i class="fa fa-angle-right"></i></a>
+					      </h4>
+					    </div>
+					    <div id="faq-3" class="panel-collapse collapse" role="tabpanel">
+					      <div class="panel-body text-left p-v-10 ">
+									<p>В этом блоке мы рекомендуем разместить информацию о Вашей организации, подчеркнуть ее значимость и надежность на рынке оказываемых услуг или предлагаемых товаров.</p>
+									<p>Примечание. Обращаем Ваше внимание, что текстовая информация на сайте должна быть индивидуальной, не скопированной с других интернет-ресурсов, о чем указано в рекомендациях Яндекса: «Мы стараемся не индексировать или не ранжировать высоко сайты, копирующие информацию с других ресурсов и не создающие оригинального контента или сервиса».</p>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#faq-4" aria-expanded="true">Повор<i class="fa fa-angle-right"></i></a>
+					      </h4>
+					    </div>
+					    <div id="faq-4" class="panel-collapse collapse" role="tabpanel">
+					      <div class="panel-body text-left p-v-10 ">
+									<p>В этом блоке мы рекомендуем разместить информацию о Вашей организации, подчеркнуть ее значимость и надежность на рынке оказываемых услуг или предлагаемых товаров.</p>
+									<p>Примечание. Обращаем Ваше внимание, что текстовая информация на сайте должна быть индивидуальной, не скопированной с других интернет-ресурсов, о чем указано в рекомендациях Яндекса: «Мы стараемся не индексировать или не ранжировать высоко сайты, копирующие информацию с других ресурсов и не создающие оригинального контента или сервиса».</p>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#faq-5" aria-expanded="true">Стилист<i class="fa fa-angle-right"></i></a>
+					      </h4>
+					    </div>
+					    <div id="faq-5" class="panel-collapse collapse" role="tabpanel">
+					      <div class="panel-body text-left p-v-10 ">
+									<p>В этом блоке мы рекомендуем разместить информацию о Вашей организации, подчеркнуть ее значимость и надежность на рынке оказываемых услуг или предлагаемых товаров.</p>
+									<p>Примечание. Обращаем Ваше внимание, что текстовая информация на сайте должна быть индивидуальной, не скопированной с других интернет-ресурсов, о чем указано в рекомендациях Яндекса: «Мы стараемся не индексировать или не ранжировать высоко сайты, копирующие информацию с других ресурсов и не создающие оригинального контента или сервиса».</p>
+					      </div>
+					    </div>
+					  </div>
 					</div>
 				</div>
 			</div>
@@ -629,20 +785,15 @@
 
 			<div class="footer-content clearfix">
 				<div class="container">
-					<div class="footer-info col-md-6 p-h-15">
-						<h3>Контакты</h3>
-						<p>
-							<span class="text-nowrap">+998 71 <b>288 29 29;</b></span>   
-							<span class="text-nowrap">+998 71 <b>288 25-52;</b></span>  
-							<span class="text-nowrap">+998 71 <b>288 26-62</b></span><br>
-							mail@sitename.com
-						</p>
-					</div>
-					<div class="footer-social col-md-6 p-h-15 m-v-30">
-						<ul class="list">
-							<li><a href="" title="" target="_blank"><i class="icm icm-linkedin-button"></i><span class="text">LinkedIn</span></a></li>
-							<li><a href="" title="" target="_blank"><i class="icm icm-facebook-logo"></i><span class="text">Facebook</span></a></li>
-							<li><a href="" title="" target="_blank"><i class="icm icm-telegram"></i><span class="text">Telegram</span></a></li>
+					<div class="footer-menu">
+						<ul class="list-inline">
+							<li><a href="">Владельцам товаров и услуг</a></li>
+							<li><a href="">Карьера</a></li>
+							<li><a href="">О нас</a></li>
+							<li><a href="">Партнёрам</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Конфиденциальность</a></li>
+							<li><a href="">Условия</a></li>
 						</ul>
 					</div>
 				</div>

@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?hbibxf');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?hbibxf#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?hbibxf') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?hbibxf') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?hbibxf##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7c628l');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7c628l#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?7c628l') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?7c628l') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?7c628l##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,387 +26,219 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icm-address .path1 {
+.icm-air-freight {
   &:before {
-    content: $icm-address-path1;  
-    color: rgb(193, 39, 45);
+    content: $icm-air-freight; 
   }
 }
-.icm-address .path2 {
+.icm-armchair {
   &:before {
-    content: $icm-address-path2;  
-    margin-left: -1em;  
-    color: rgb(21, 21, 21);
+    content: $icm-armchair; 
   }
 }
-.icm-address .path3 {
+.icm-auction {
   &:before {
-    content: $icm-address-path3;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-auction; 
   }
 }
-.icm-address .path4 {
+.icm-box {
   &:before {
-    content: $icm-address-path4;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-box; 
   }
 }
-.icm-award .path1 {
+.icm-building {
   &:before {
-    content: $icm-award-path1;  
-    color: rgb(193, 39, 45);
+    content: $icm-building; 
   }
 }
-.icm-award .path2 {
+.icm-bulb {
   &:before {
-    content: $icm-award-path2;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-bulb; 
   }
 }
-.icm-award .path3 {
+.icm-champagne-glass {
   &:before {
-    content: $icm-award-path3;  
-    margin-left: -1em;  
-    color: rgb(21, 21, 21);
+    content: $icm-champagne-glass; 
   }
 }
-.icm-discount .path1 {
+.icm-contract {
   &:before {
-    content: $icm-discount-path1;  
-    color: rgb(21, 21, 21);
+    content: $icm-contract; 
   }
 }
-.icm-discount .path2 {
+.icm-cow {
   &:before {
-    content: $icm-discount-path2;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-cow; 
   }
 }
-.icm-discount .path3 {
+.icm-desktop {
   &:before {
-    content: $icm-discount-path3;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-desktop; 
   }
 }
-.icm-discount .path4 {
+.icm-envelope-shape {
   &:before {
-    content: $icm-discount-path4;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-envelope-shape; 
   }
 }
-.icm-discount .path5 {
+.icm-fabric {
   &:before {
-    content: $icm-discount-path5;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-fabric; 
   }
 }
-.icm-facebook-logo {
+.icm-fast-food {
   &:before {
-    content: $icm-facebook-logo; 
+    content: $icm-fast-food; 
   }
 }
-.icm-Favicon {
+.icm-headset {
   &:before {
-    content: $icm-Favicon;     
-    color: #c1272d;
+    content: $icm-headset; 
   }
 }
-.icm-global {
+.icm-house {
   &:before {
-    content: $icm-global; 
+    content: $icm-house; 
   }
 }
-.icm-home {
+.icm-laboratory {
   &:before {
-    content: $icm-home; 
+    content: $icm-laboratory; 
   }
 }
-.icm-idea .path1 {
+.icm-lock {
   &:before {
-    content: $icm-idea-path1;  
-    color: rgb(21, 21, 21);
+    content: $icm-lock; 
   }
 }
-.icm-idea .path2 {
+.icm-map {
   &:before {
-    content: $icm-idea-path2;  
-    margin-left: -1em;  
-    color: rgb(21, 21, 21);
+    content: $icm-map; 
   }
 }
-.icm-idea .path3 {
+.icm-masks {
   &:before {
-    content: $icm-idea-path3;  
-    margin-left: -1em;  
-    color: rgb(21, 21, 21);
+    content: $icm-masks; 
   }
 }
-.icm-idea .path4 {
+.icm-medical-book-health {
   &:before {
-    content: $icm-idea-path4;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-medical-book-health; 
   }
 }
-.icm-idea .path5 {
+.icm-megaphone {
   &:before {
-    content: $icm-idea-path5;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-megaphone; 
   }
 }
-.icm-idea .path6 {
+.icm-microscope {
   &:before {
-    content: $icm-idea-path6;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-microscope; 
   }
 }
-.icm-idea .path7 {
+.icm-newspaper {
   &:before {
-    content: $icm-idea-path7;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-newspaper; 
   }
 }
-.icm-idea .path8 {
+.icm-pick {
   &:before {
-    content: $icm-idea-path8;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-pick; 
   }
 }
-.icm-idea .path9 {
+.icm-receipt {
   &:before {
-    content: $icm-idea-path9;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
+    content: $icm-receipt; 
   }
 }
-.icm-linkedin-button {
+.icm-shield {
   &:before {
-    content: $icm-linkedin-button; 
+    content: $icm-shield; 
   }
 }
-.icm-mail-black-envelope-symbol {
+.icm-shopping-cart {
   &:before {
-    content: $icm-mail-black-envelope-symbol; 
+    content: $icm-shopping-cart; 
   }
 }
-.icm-MT_logo_final .path1 {
+.icm-sketch {
   &:before {
-    content: $icm-MT_logo_final-path1;  
-    color: rgb(193, 39, 45);
+    content: $icm-sketch; 
   }
 }
-.icm-MT_logo_final .path2 {
+.icm-software {
   &:before {
-    content: $icm-MT_logo_final-path2;  
-    margin-left: -2.90234375em;  
-    color: rgb(0, 0, 0);
+    content: $icm-software; 
   }
 }
-.icm-MT_logo_final .path3 {
+.icm-solar-energy {
   &:before {
-    content: $icm-MT_logo_final-path3;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-solar-energy; 
   }
 }
-.icm-MT_logo_final .path4 {
+.icm-star {
   &:before {
-    content: $icm-MT_logo_final-path4;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-star; 
   }
 }
-.icm-MT_logo_final .path5 {
+.icm-star-o {
   &:before {
-    content: $icm-MT_logo_final-path5;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-star-o; 
   }
 }
-.icm-MT_logo_final .path6 {
+.icm-steering-wheel-car-part-controller {
   &:before {
-    content: $icm-MT_logo_final-path6;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-steering-wheel-car-part-controller; 
   }
 }
-.icm-MT_logo_final .path7 {
+.icm-support {
   &:before {
-    content: $icm-MT_logo_final-path7;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-support; 
   }
 }
-.icm-MT_logo_final .path8 {
+.icm-telephone {
   &:before {
-    content: $icm-MT_logo_final-path8;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-telephone; 
   }
 }
-.icm-MT_logo_final .path9 {
+.icm-tower {
   &:before {
-    content: $icm-MT_logo_final-path9;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-tower; 
   }
 }
-.icm-MT_logo_final .path10 {
+.icm-train {
   &:before {
-    content: $icm-MT_logo_final-path10;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-train; 
   }
 }
-.icm-MT_logo_final .path11 {
+.icm-university {
   &:before {
-    content: $icm-MT_logo_final-path11;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-university; 
   }
 }
-.icm-MT_logo_final .path12 {
+.icm-user {
   &:before {
-    content: $icm-MT_logo_final-path12;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-user; 
   }
 }
-.icm-MT_logo_final .path13 {
+.icm-valve {
   &:before {
-    content: $icm-MT_logo_final-path13;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-valve; 
   }
 }
-.icm-MT_logo_final .path14 {
+.icm-washing-machine {
   &:before {
-    content: $icm-MT_logo_final-path14;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-washing-machine; 
   }
 }
-.icm-MT_logo_final .path15 {
+.icm-water {
   &:before {
-    content: $icm-MT_logo_final-path15;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
+    content: $icm-water; 
   }
 }
-.icm-MT_logo_final .path16 {
+.icm-wrench {
   &:before {
-    content: $icm-MT_logo_final-path16;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
-  }
-}
-.icm-MT_logo_final .path17 {
-  &:before {
-    content: $icm-MT_logo_final-path17;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
-  }
-}
-.icm-MT_logo_final .path18 {
-  &:before {
-    content: $icm-MT_logo_final-path18;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
-  }
-}
-.icm-MT_logo_final .path19 {
-  &:before {
-    content: $icm-MT_logo_final-path19;  
-    margin-left: -2.90234375em;  
-    color: rgb(67, 67, 67);
-  }
-}
-.icm-phone-receiver {
-  &:before {
-    content: $icm-phone-receiver; 
-  }
-}
-.icm-play-button {
-  &:before {
-    content: $icm-play-button; 
-  }
-}
-.icm-telegram {
-  &:before {
-    content: $icm-telegram; 
-  }
-}
-.icm-vehicle .path1 {
-  &:before {
-    content: $icm-vehicle-path1;  
-    color: rgb(193, 39, 45);
-  }
-}
-.icm-vehicle .path2 {
-  &:before {
-    content: $icm-vehicle-path2;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
-  }
-}
-.icm-vehicle .path3 {
-  &:before {
-    content: $icm-vehicle-path3;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
-  }
-}
-.icm-vehicle .path4 {
-  &:before {
-    content: $icm-vehicle-path4;  
-    margin-left: -1em;  
-    color: rgb(193, 39, 45);
-  }
-}
-.icm-vehicle .path5 {
-  &:before {
-    content: $icm-vehicle-path5;  
-    margin-left: -1em;  
-    color: rgb(21, 21, 21);
-  }
-}
-.icm-vehicle .path6 {
-  &:before {
-    content: $icm-vehicle-path6;  
-    margin-left: -1em;  
-    color: rgb(21, 21, 21);
-  }
-}
-.icm-vehicle .path7 {
-  &:before {
-    content: $icm-vehicle-path7;  
-    margin-left: -1em;  
-    color: rgb(21, 21, 21);
-  }
-}
-.icm-vehicle .path8 {
-  &:before {
-    content: $icm-vehicle-path8;  
-    margin-left: -1em;  
-    color: rgb(21, 21, 21);
-  }
-}
-.icm-vehicle .path9 {
-  &:before {
-    content: $icm-vehicle-path9;  
-    margin-left: -1em;  
-    color: rgb(21, 21, 21);
+    content: $icm-wrench; 
   }
 }
 
