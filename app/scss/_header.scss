@@ -35,7 +35,6 @@ $header-min-menu: 70px;
 	height: $header-top-height+$header-bottom-height;
 	transition: height 0.3s ease-in-out 0.4s;
 	@media ( max-width: 991px ){
-		display: none;
 		height: 70px;
 	}
 }
@@ -91,7 +90,10 @@ $header-min-menu: 70px;
 }
 .header-bottom-content{
 	display: flex;
+	background-color: white;
 	align-items: center;
+	z-index: 1;
+	position: relative;
 	height: $header-bottom-height;
 }
 .header-logo{
@@ -102,7 +104,7 @@ $header-min-menu: 70px;
 .search-container{
 	width: 100%;
 	.search-nav-content{
-		width: 40%;
+		min-width: 400px;
 		input{
 			width: 100%;
 		}
@@ -128,34 +130,23 @@ $header-min-menu: 70px;
 		transform-origin: 50% 0;
 	}
 
-	.search-nav-content{
-		z-index: -1;
-	}
-	.header-top, .header-top-content, .header-logo img, .header-logo, .search-nav-content{
+	.header-top, .header-top-content, .header-logo img, .header-logo, .header-bottom-content{
 		transition: all 0.5s ease; 	
 	}
 	&.scrolled, &.header-pages{
 		.header-top{
 			box-shadow: 0px 5px 20px -10px black;
-			//padding-bottom: 0;
-			a{
-				color: white;
-			}
 			background-color: $color-gray-4;
 		}
-		.search-nav-content{
-			top: -150px;
-		}
-		.header-logo{
-			height: 100px;
-			width: 250px;
-			box-shadow: 0px 5px 20px -10px black;
-			img{
-				width: 200px;
+		.header-top-content{
+			overflow: hidden;
+			height: 0;
+			.menu{
+				color: $color-gray-4;
 			}
 		}
-		.header-top-content{
-			height: 80px;
+		.header-bottom-content{
+			height: 60px;
 		}
 	}
 }
@@ -642,12 +633,33 @@ textarea.form-control{
 	color: black;
 	padding-right: 40px;
 	padding-left: 40px;
-	.form-wrapper{
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
 	@media (min-width: 992px) {
-		//width: 360px;
+		background-image: url('../img/other/callbaby.png');
+		background-repeat: no-repeat;
+		background-position: -50px;
+		background-size: auto;
+		padding-left: 160px;
+		padding-right: 20px;
+	}
+	.form-main{
+		max-width: 320px;
+	}
+	.input-icon{
+		position: relative;
+	}
+	.fa{
+		font-size: 18px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 15px;
+		color: $color-gray-3;
+	}
+	.fa-envelope{
+		font-size: 15px;
+	}
+	input{
+		padding-left: 45px;
 	}
 	h1, h3{
 		margin-top: 0;

@@ -144,8 +144,8 @@
 		$("#min-menu").mmenu({
 			extensions: [
 				"wrapper-bg", // wrapper-bg black
-				"theme-dark",
-				//"theme-white",
+				//"theme-dark",
+				"theme-white",
 				//"fullscreen",
 				"listview-50",
 				"fx-panels-slide-up",
@@ -193,7 +193,7 @@
 				prevNextButtons: true,
 				draggable: false,
 				wrapAround: true,
-				pageDots: true,
+				pageDots: false,
 				contain: false,
 				percentPosition: true,
 				cellSelector: 'figure',
@@ -201,21 +201,21 @@
 			});
 			bnrCarousel.data("flickity");
 
-			$(".bnr-carousel .carousel-items").append("<div class='container container-arrows'></div>").find(".container-arrows").append($(".bnr-carousel .carousel-items .flickity-prev-next-button"))
+			$(".bnr-carousel .carousel-items").append("<div class='container-arrows'></div>").find(".container-arrows").append($(".bnr-carousel .carousel-items .flickity-prev-next-button"))
 			$(bnrCarousel).find(".flickity-prev-next-button.previous").after($(bnrCarousel).find(".flickity-page-dots"));
 
 		}
 
-		//reviews-carousel
-		$(".reviews-carousel .carousel-items").flickity({
+		//adbnr-carousel
+		$(".adbnr-carousel").flickity({
 			imagesLoaded: true,
-			autoPlay: 3300,
+			autoPlay: 6000,
 			pauseAutoPlayOnHover: true,
 			arrowShape: arrowStyle,
 			initialIndex: 0,
-			prevNextButtons: true,
+			prevNextButtons: false,
 			draggable: false,
-			wrapAround: false,
+			wrapAround: true,
 			pageDots: false,
 			contain: true,
 			percentPosition: true,
@@ -223,8 +223,8 @@
 			cellAlign: "center"
 		});
 
-		window.carouselArticle = function() {
-			if ($(".carousel-article").length >= 0) {
+		if ($(".carousel-article").length >= 0) {
+			window.carouselArticle = function() {
 				var carouselMain = $(".carousel-article .carousel-main"),
 					carouselNav = $(".carousel-article .carousel-nav");
 
@@ -327,7 +327,7 @@
 			if ($(window).scrollTop() > 100 && headerRange == false) {
 
 				headerRange = true;
-				if (minMenu) minMenu.addClass("scrolled").addClass("down");
+				if (minMenu) minMenu.addClass("scrolled");
 
 			} else if ($(window).scrollTop() < 100 && headerRange == true) {
 				headerRange = !true;

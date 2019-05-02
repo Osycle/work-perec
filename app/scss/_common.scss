@@ -1082,8 +1082,9 @@ html{
 	.form-control{
 		border-radius: 0;
 		background-color: white;
+		border: 1px solid $color-gray-1;
 		&:focus{
-			border-color: $color-1;
+			border-color: $color-gray-2;
 		}
 	}
 	input.form-control{
