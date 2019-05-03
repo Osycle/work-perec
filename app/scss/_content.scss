@@ -68,6 +68,13 @@ small{
 	p{
 		line-height: 170%;
 	}
+	@media (min-width: 992px) {
+		h1{
+			position: relative;
+		}
+	}
+}
+.h1-style{
 	h1{
 		&:before{
 			@extend .clafclear;
@@ -81,11 +88,6 @@ small{
 			background-image: url('../img/other/char-border.png');
 		}
 	}
-	@media (min-width: 992px) {
-		h1{
-			position: relative;
-		}
-	}
 	@media (max-width: 991px) {
 		h1{
 			&:before{
@@ -94,7 +96,6 @@ small{
 		}
 	}
 }
-
 .bg-shadow{
 	pointer-events: none;
 }
@@ -873,7 +874,7 @@ figcaption{
 		align-items: center;
 		transition: all 0.3s ease;
 		padding: 10px 15px;
-		background-color: #fbfbfb;
+		background-color: $color-gray-2;
 		&:hover{
 			background-color: $color-1;
 			color: white;
@@ -1067,6 +1068,47 @@ figcaption{
 		padding: 45px 45px;
 		@media (max-width: 991px) {
 			padding: 15px 15px;
+		}
+	}
+}
+
+
+
+
+
+
+
+//service
+.entry-icon-header{
+	background-color: $color-gray-2;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	.icm-content{
+		display: inline-block;
+		width: 100px;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		font-size: 50px;
+		height: 100%;
+		background-color: $color-gray-1;
+	}
+	.entry-header{
+		padding-left: 30px;
+	}
+	h1{
+		margin: 0;
+	}
+}
+.service-bar{
+	background-color: $color-gray-2;
+	min-height: 1050px;
+	li{
+		a{
+			display: block;
+			padding: 10px 20px;
 		}
 	}
 }
