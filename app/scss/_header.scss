@@ -680,6 +680,27 @@ textarea.form-control{
     }
 	}
 }
+.form-bid{
+	max-width: 360px;
+	label{
+		font-weight: 400;
+	}
+	.label-title{
+		font-size: 0.9em;
+		color: $color-gray-3;
+		padding-bottom: 5px;
+		display: inline-block;
+	}
+	.fancybox-close-small{
+    &:after{
+    	color: $color-1;
+    	font-size: 25px;
+    }
+ 		&:hover:after{
+ 			color: $color-1;
+ 		}
+ 	}
+}
 .form-success{
 	.icon-content{
 		text-align: center;

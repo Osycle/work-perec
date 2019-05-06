@@ -46,49 +46,20 @@
 				'<svg viewBox="0 0 100 100"><path d="M 10,50 L 70,100 L 70,90 L 70,50  L 70,10 L 70,0 Z" class="arrow"></path></svg>'+
 			'</span>'
 		]
-		$(".staff-items.owl-carousel").owlCarousel({
+		$(".reviews-items.owl-carousel").owlCarousel({
 			nav: true,
 			//items: 3,
-			dots: true,
+			dots: false,
 			dotsEach: true,
 			autoplay: true,
 			touchDrag: false,
 			responsive:{
-				0:{items:1},
-				991:{items:4}
-			},
-			navText : owlBtn,
-			margin: 15
-		});
-		$(".certifications-items.owl-carousel").owlCarousel({
-			nav: true,
-			//items: 3,
-			dots: true,
-			dotsEach: true,
-			autoplay: true,
-			touchDrag: false,
-			responsive:{
-				0:{items:1},
-				991:{items:3}
+				0:{items:1}
 			},
 			navText : owlBtn,
 			margin: 15
 		});
 
-		$(".short-partners-items.owl-carousel").owlCarousel({
-			nav: true,
-			//items: 3,
-			dots: true,
-			dotsEach: true,
-			autoplay: true,
-			touchDrag: false,
-			responsive:{
-				0:{items:3},
-				991:{items:4}
-			},
-			navText : owlBtn,
-			margin: 0
-		});
 
 		if( $(".owl-nav-style-1").length > 0 ){
 			$(".owl-nav-style-1").map(function( i, el ){

@@ -19,7 +19,7 @@ $color-scroll: $color-1;
 $color-footer: #0071BC;
 
 $color-gray-1: #ededed; //#bdbdbd
-$color-gray-2: #fbfbfb;
+$color-gray-2: #f5f5f5;
 $color-gray-3: #868686;
 $color-gray-4: #282828;
 $color-gray-5: #212121;
@@ -617,6 +617,7 @@ table {
 	}	
 	&:not(.changecolor-none):hover{
 		//box-shadow: 0px 0px 15px 2px $color-1;
+		background-color: darken($color-1, 10%);
 	}
 	&.radius{
 		border-radius: 20px;
@@ -626,7 +627,7 @@ table {
 			background-color: $color-2;
 		}
 		&:not(.changecolor-none):hover{
-			background-color: $color-1;
+			background-color: darken($color-3, 10%);
 		}
 	}
 }
@@ -784,7 +785,7 @@ table {
 
 .parag-gray{
 	p:not([class*="color"]){
-		color: $color-gray-3;
+		color: #454545;
 	}
 }
 
@@ -981,7 +982,6 @@ main{
 	}
 	
 	p{
-    font-weight: 300;
     font-style: normal;
 		position: relative;
 		line-height: 150%;
