@@ -896,7 +896,10 @@ figcaption{
 }
 .user-info-items{
 	.row{
-		margin-top: 10px;
-		margin-bottom: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		&:nth-child(odd){
+			background-color: $color-gray-2;
+		}
 	}
 }
