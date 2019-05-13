@@ -903,3 +903,50 @@ figcaption{
 		}
 	}
 }
+
+
+
+
+
+//fixed-social
+.fixed-social{
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	.fa{
+		width: 38px;
+		height: 38px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		background-color: gray;
+		transition: all 0.3s ease;
+		&:hover{
+			width: 45px;
+			border-radius: 0 0px 0px 0 !important;
+		}
+	}
+	li{
+		&:nth-child(1){
+			.fa{
+				border-radius: 0 5px 0 0;
+			}
+		}
+		&:nth-last-child(1){
+			.fa{
+				border-radius: 0 0 5px 0;
+			}
+		}
+
+	}
+	.fa-facebook{background-color: #3a579a;}
+	.fa-twitter{background-color: #00abf0;}
+	.fa-google-plus{background-color: #df4a32;}
+	.fa-pinterest-p{background-color: #c92228;}
+
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
