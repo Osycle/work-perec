@@ -326,8 +326,8 @@ figcaption{
 
 //content
 
-//rubrics-items
-.rubrics-items{
+//entity-items
+.entity-items{
 	.icm{
 		font-size: 48px;
 	}
@@ -765,43 +765,44 @@ figcaption{
 
 
 
-//rubrics-article
-.rubrics-catalog{
-	padding: 20px 30px;
-	border: 1px solid $color-gray-2;
-	ul{
-		display: flex;
-		flex-wrap: wrap;
-	}
-	li{
-		border-bottom: 1px solid $color-gray-2;
-		list-style: none !important;
-		width: 50%;
-		a{
-			padding: 8px 15px;
-			display: block;
-			transition: all 0.3s ease;
-		}
-		&:hover{
-			a{
-				background-color: $color-1;
-				color: white;
-			}
-		}
-	}
-	@media (max-width: 991px) {
-		padding: 15px 20px;
-		ul{
+//entity-article
+.entity-article{
 
+}
+.entity-filter{
+	.field-item{
+		display: flex;
+		align-items: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		select{
+			min-width: 60px;
 		}
-		li{
-			width: 100%;
+	}
+	.field-item-title{
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	.row.clearfix{
+		display: flex;
+		justify-content: space-between;
+	}
+	.input-content{
+		border-left: 1px solid $color-gray-1;
+		padding-left: 10px;
+		padding-right: 10px;
+		color: $color-gray-3;
+		label{
+			font-weight: 400;
+		}
+		.fa{
+			margin-left: 5px;
+		}
+		input[class*="hide"]:checked ~ label{
+			color: $color-1;
 		}
 	}
 }
-
-
-
 
 
 
@@ -827,7 +828,6 @@ figcaption{
 			color: white;
 			justify-content: center;
 			align-items: center;
-			top: 0;
 			left: 0;
 		}
 		input{
@@ -949,4 +949,14 @@ figcaption{
 	@media (max-width: 991px) {
 		display: none;
 	}
+}
+
+
+
+.to-wrapper{
+	display: flex;
+	height: calc(100vh - 120px - 97px);
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
