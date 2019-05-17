@@ -729,11 +729,18 @@ $locolor-gray: #e1e1e1;
 	}
 
 }
+.entity-wrapper{
+	position: relative;
+}
 .entity-bar{
 	background-color: $color-gray-2;
-	border: 1px solid $color-gray-2;
+	position: absolute;
+	top: 0;
+	width: 210px;
 	li{
 		position: relative;
+		font-size: em(16);
+		font-weight: 600;
 		a{
 			display: block;
 			padding: 20px 30px;
@@ -748,7 +755,7 @@ $locolor-gray: #e1e1e1;
 			right: 0;
 			top: 50%;
 			z-index: 1;
-			transform: translate(10px, -50%) rotate(45deg) matrix(1,-0.2,-0.2,1,0,0);
+			transform: translate(5px, -50%) rotate(45deg) matrix(1,-0.1,-0.1,1,0,0);
 		}
 		&.active{
 			background-color: $color-1;
@@ -757,16 +764,40 @@ $locolor-gray: #e1e1e1;
 				background-color: $color-1;
 			}
 		}
+		&:hover{
+			background-color: $color-1;
+			color: white;
+			a{
+				background-color: transparent;
+				color: white;
+			}
+		}
+		a{
+			&:focus{
+				background-color: transparent;
+			}
+		}
 	}
-	// .list{
-	// 	max-height: 700px;
-	// 	overflow-y: auto;
-	// }
-	// @media (min-width: 992px) {
-	// 	.list{
-	// 		height: 700px;	
-	// 	}
-	// }
+	&.entity-bar-fixed{
+		position: fixed;
+		z-index: 50;
+		width: 210px;
+		top: 70px;
+		left: calc(50% - 570px);
+	}
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
+.entity-bar-area{
+	height: 150px;
+	display: inline-block;
+	width: 0;
+	left: 0;
+	background-color: green;
+	@media (max-width: 991px) {
+		display: none;
+	}
 }
 .rating-content{
 	small{
@@ -792,6 +823,7 @@ $locolor-gray: #e1e1e1;
 		//min-width: 130px;
 		align-items: center;
 		border: 1px solid $color-gray-2;
+		transition: all 0.3s ease;
 	}
 	.fa{
 		width: 20px;
@@ -803,36 +835,39 @@ $locolor-gray: #e1e1e1;
 	.social-title{
 		font-size: em(12);
 	}
-	figure{
-		transition: all 0.3s ease;
+	figure{		
 		padding: 2px;
 		&:hover{
-			color: white;
+			a{
+				color: white;
+			}
 		}
 	}
-	.bg-telegram:hover{background-color: #1094e6;}
-	.bg-callme:hover{background-color: #43c434;}
-	.bg-feedback:hover{background-color: #25705c;}
-	.bg-write:hover{background-color: #eeac70;}
-	.bg-web:hover{background-color: #573498;}
-	.bg-facebook:hover{background-color: #1b59b0;}
-	.bg-youtube:hover{background-color: #fb0206;}
-	.bg-ok:hover{background-color: #e68021;}
-	.bg-in:hover{background-color: #247fae;}
-	.bg-vk:hover{background-color: #0d4c87;}
-	.bg-instagram:hover{background-color: #dd2142;}
-	.bg-gplus:hover{background-color: #922d34;}
-	.bg-lifej:hover{background-color: #17405d;}
-	.bg-pinterest:hover{background-color: #fa023c;}
+	.bg-telegram:hover a{background-color: #1094e6;}
+	.bg-callme:hover a{background-color: #43c434;}
+	.bg-feedback:hover a{background-color: #25705c;}
+	.bg-write:hover a{background-color: #eeac70;}
+	.bg-web:hover a{background-color: #573498;}
+	.bg-facebook:hover a{background-color: #1b59b0;}
+	.bg-youtube:hover a{background-color: #fb0206;}
+	.bg-ok:hover a{background-color: #e68021;}
+	.bg-in:hover a{background-color: #247fae;}
+	.bg-vk:hover a{background-color: #0d4c87;}
+	.bg-instagram:hover a{background-color: #dd2142;}
+	.bg-gplus:hover a{background-color: #922d34;}
+	.bg-lifej:hover a{background-color: #17405d;}
+	.bg-pinterest:hover a{background-color: #fa023c;}
 
 }
 
 .entity-content{
 	border: 1px solid $locolor-gray;
 	padding: 30px;
-	margin-left: -1px;
 	.contacts-title{
 		min-width: 80px;
+	}
+	@media (max-width: 991px) {
+		padding: 15px;
 	}
 }
 .entity-desc{
@@ -906,7 +941,38 @@ $locolor-gray: #e1e1e1;
 .entity-item{
 	border-bottom: 1px solid $color-gray-1;
 }
-
+.entity-contacts{
+	text-align: left;
+	.btn-content{
+		display: flex;
+		.btn-def{
+			width: 100%;
+			&.reverse{
+				background-color: $color-3;
+			}
+    	text-indent: -20px;
+		}
+		.icm{
+			font-size: 18px;
+			margin-right: 15px;
+    	//position: absolute;
+    	//transform: translate(-30px , -1px);
+		}
+	}
+	@media (max-width: 991px) {
+		font-size: 0.95em;
+		.btn-content{
+			@media (max-width: 991px) {
+				text-align: center;
+				flex-direction: column;
+			}
+			.btn-def{
+				width: 80%;
+				margin: 5px auto;
+			}
+		}
+	}
+}
 .entity-contacts-item{
 	display: flex;
 	padding: 10px 10px;
@@ -919,6 +985,9 @@ $locolor-gray: #e1e1e1;
 	}
 	&:nth-child(even){
 		background-color: $color-gray-2;
+	}
+	@media (max-width: 991px) {
+		flex-direction: column;
 	}
 }
 

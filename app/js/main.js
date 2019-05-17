@@ -305,27 +305,46 @@
 				if (minMenu) minMenu.removeClass("scrolled");
 			} //.originalEvent.wheelDelta
 
+			var entityBarArea = $(".entity-bar-area");
+			var entityBar = $(".entity-bar");
+			var enContent = ( ($(".entity-content").offset().top) <= ($(window).scrollTop() + $(window).height() - ($(".entity-content").height() + 350)) )
+
+			if( (entityBarArea.offset().top) <= ($(window).scrollTop() + 70) && !enContent){
+				if(!entityBar.hasClass("entity-bar-fixed")){
+					entityBar.addClass("entity-bar-fixed");
+					$("main").before(entityBar);
+				}
+				console.log("В зоне", enContent);
+			}else if( entityBar.hasClass("entity-bar-fixed") ){
+				entityBar.removeClass("entity-bar-fixed");
+				entityBarArea.after(entityBar);
+				//console.log("не в зоне");
+			}
+
 		});
 		$(window).trigger("scroll");
 
 
 
 
-	if( $("#useravatar").length != 0 )
-		$("#useravatar").on("change", function(e){
-			var file = this.files[0];
-			var out = "";
-			var reader = new FileReader();
-			reader.onload = function(e){
-				var result = e.target.result;
-				if( $(".useravatar-img").length != 0 )
-					$(".useravatar-img")[0].style.backgroundImage = "url('"+result+"')";
-			};
-			reader.readAsDataURL(file);
-		})
+		if( $("#useravatar").length != 0 )
+			$("#useravatar").on("change", function(e){
+				var file = this.files[0];
+				var out = "";
+				var reader = new FileReader();
+				reader.onload = function(e){
+					var result = e.target.result;
+					if( $(".useravatar-img").length != 0 )
+						$(".useravatar-img")[0].style.backgroundImage = "url('"+result+"')";
+				};
+				reader.readAsDataURL(file);
+			})
 
 
-
+		$('body').scrollspy({
+		    target: '.entity-bar',
+		    offset: 280
+		});
 
 
 	});
