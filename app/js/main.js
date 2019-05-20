@@ -305,20 +305,23 @@
 				if (minMenu) minMenu.removeClass("scrolled");
 			} //.originalEvent.wheelDelta
 
-			var entityBarArea = $(".entity-bar-area");
-			var entityBar = $(".entity-bar");
-			var enContent = ( ($(".entity-content").offset().top) <= ($(window).scrollTop() + $(window).height() - ($(".entity-content").height() + 350)) )
+			if( $(".entity-bar-area").length < 0 ){
 
-			if( (entityBarArea.offset().top) <= ($(window).scrollTop() + 70) && !enContent){
-				if(!entityBar.hasClass("entity-bar-fixed")){
-					entityBar.addClass("entity-bar-fixed");
-					$("main").before(entityBar);
+				var entityBarArea = $(".entity-bar-area");
+				var entityBar = $(".entity-bar");
+				var enContent = ( ($(".entity-content").offset().top) <= ($(window).scrollTop() + $(window).height() - ($(".entity-content").height() + 350)) )
+
+				if( (entityBarArea.offset().top) <= ($(window).scrollTop() + 70) && !enContent){
+					if(!entityBar.hasClass("entity-bar-fixed")){
+						entityBar.addClass("entity-bar-fixed");
+						$("main").before(entityBar);
+					}
+					console.log("В зоне", enContent);
+				}else if( entityBar.hasClass("entity-bar-fixed") ){
+					entityBar.removeClass("entity-bar-fixed");
+					entityBarArea.after(entityBar);
+					//console.log("не в зоне");
 				}
-				console.log("В зоне", enContent);
-			}else if( entityBar.hasClass("entity-bar-fixed") ){
-				entityBar.removeClass("entity-bar-fixed");
-				entityBarArea.after(entityBar);
-				//console.log("не в зоне");
 			}
 
 		});

@@ -8409,7 +8409,7 @@ input[type="radio"]:checked ~ .radio-style-1, input[type="radio"]:checked ~ .rad
     display: -ms-flexbox;
     display: flex;
     height: 100%; }
-    .header-signin .btn-def:nth-child(1) {
+    .header-signin .btn-def:not(.reverse):nth-child(1) {
       color: #868686;
       background-color: transparent; }
 
@@ -8671,23 +8671,47 @@ ul[class*="sub-menu"] {
   -webkit-background-size: 600px 600px;
   background-size: 600px;
   background-position: right; }
-  #min-menu .search-container .search-container-wrapper {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  #min-menu .search-container .search-nav-content {
-    min-width: 50px;
-    width: 65%; }
-  #min-menu .search-container .btn-def {
-    width: 35%; }
-    #min-menu .search-container .btn-def button {
-      padding-left: 5px;
-      padding-right: 5px; }
+  #min-menu .search-container {
+    padding-left: 15px; }
+    #min-menu .search-container .search-container-wrapper {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      #min-menu .search-container .search-container-wrapper .btn-def {
+        width: 35%; }
+        #min-menu .search-container .search-container-wrapper .btn-def button {
+          padding-left: 5px;
+          padding-right: 5px; }
+    #min-menu .search-container .search-nav-content {
+      min-width: 50px;
+      width: 65%; }
   #min-menu .select-content {
     display: none;
     width: 40%; }
+  #min-menu .header-signin {
+    text-align: center;
+    padding-left: 15px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    #min-menu .header-signin .btn-def {
+      background-color: transparent;
+      color: #868686;
+      text-decoration: underline;
+      width: 100%; }
+      #min-menu .header-signin .btn-def a {
+        width: 100%; }
+    #min-menu .header-signin .img {
+      height: 30px;
+      width: 30px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-position: center;
+      -webkit-background-size: cover;
+      background-size: cover; }
 
 .min-menu-lang li {
   text-decoration: underline; }

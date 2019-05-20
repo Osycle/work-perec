@@ -77,7 +77,7 @@ $header-min-menu: 70px;
 		align-items: center;
 		display: flex;
 		height: 100%;
-		&:nth-child(1){
+		&:not(.reverse):nth-child(1){
 			color: $color-gray-3;
 			background-color: transparent;
 		}
@@ -365,26 +365,48 @@ ul[class*="sub-menu"]{
 	background-size: 600px;
 	background-position: right;
 	.search-container{
+		padding-left: 15px;
 		.search-container-wrapper{
 			flex-wrap: wrap;
 			margin-top: 10px;
 			margin-bottom: 10px;
+			.btn-def{
+				width: 35%;
+				button{
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
 		}
 		.search-nav-content{
 			min-width: 50px;
 			width: 65%;
 		}
-		.btn-def{
-			width: 35%;
-			button{
-				padding-left: 5px;
-				padding-right: 5px;
-			}
-		}
 	}
 	.select-content{
 		display: none;
 		width: 40%;
+	}
+	.header-signin{
+		text-align: center;
+		padding-left: 15px;
+		justify-content: space-between;
+		.btn-def{
+			background-color: transparent;
+			color: $color-gray-3;
+			text-decoration: underline;
+			width: 100%;
+			a{
+				width: 100%;
+			}
+		}
+		.img{
+			height: 30px;
+			width: 30px;
+			border-radius: 50%;
+			background-position: center;
+			background-size: cover;
+		}
 	}
 }
 .min-menu-lang{
