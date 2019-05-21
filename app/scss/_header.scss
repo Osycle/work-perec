@@ -67,7 +67,9 @@ $header-min-menu: 70px;
 }
 .header-address{
 	min-width: 30%;
-
+	overflow: hidden;
+	max-width: 200px;
+	text-overflow: ellipsis;
 }
 .header-signin{
 	height: 100%;
@@ -366,6 +368,7 @@ ul[class*="sub-menu"]{
 	background-position: right;
 	.search-container{
 		padding-left: 15px;
+		padding-right: 15px;
 		.search-container-wrapper{
 			flex-wrap: wrap;
 			margin-top: 10px;
@@ -376,6 +379,10 @@ ul[class*="sub-menu"]{
 					padding-left: 5px;
 					padding-right: 5px;
 				}
+			}
+			input{
+				padding-top: 2px;
+				padding-bottom: 2px;
 			}
 		}
 		.search-nav-content{
@@ -390,6 +397,7 @@ ul[class*="sub-menu"]{
 	.header-signin{
 		text-align: center;
 		padding-left: 15px;
+		padding-right: 15px;
 		justify-content: space-between;
 		.btn-def{
 			background-color: transparent;
@@ -400,14 +408,34 @@ ul[class*="sub-menu"]{
 				width: 100%;
 			}
 		}
-		.img{
-			height: 30px;
-			width: 30px;
-			border-radius: 50%;
-			background-position: center;
-			background-size: cover;
+		&.username-content{
+			justify-content: center;
+			align-items: center;
 		}
 	}
+}
+.username-content{
+	justify-content: center;
+	align-items: center;
+	.img{
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		background-position: center;
+		background-size: cover;
+		border: 1px solid $color-gray-3;
+	}
+	.username-title{
+		margin-left: 15px;
+		max-width: 210px;
+		p{
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+	}
+}
+#mm-blocker{
+	background-color: rgba(black, 0.3);
 }
 .min-menu-lang{
 	li{

@@ -8390,7 +8390,11 @@ input[type="radio"]:checked ~ .radio-style-1, input[type="radio"]:checked ~ .rad
     flex-wrap: nowrap; }
 
 .header-address {
-  min-width: 30%; }
+  min-width: 30%;
+  overflow: hidden;
+  max-width: 200px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
 
 .header-signin {
   height: 100%;
@@ -8672,7 +8676,8 @@ ul[class*="sub-menu"] {
   background-size: 600px;
   background-position: right; }
   #min-menu .search-container {
-    padding-left: 15px; }
+    padding-left: 15px;
+    padding-right: 15px; }
     #min-menu .search-container .search-container-wrapper {
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -8684,6 +8689,9 @@ ul[class*="sub-menu"] {
         #min-menu .search-container .search-container-wrapper .btn-def button {
           padding-left: 5px;
           padding-right: 5px; }
+      #min-menu .search-container .search-container-wrapper input {
+        padding-top: 2px;
+        padding-bottom: 2px; }
     #min-menu .search-container .search-nav-content {
       min-width: 50px;
       width: 65%; }
@@ -8693,6 +8701,7 @@ ul[class*="sub-menu"] {
   #min-menu .header-signin {
     text-align: center;
     padding-left: 15px;
+    padding-right: 15px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -8704,14 +8713,44 @@ ul[class*="sub-menu"] {
       width: 100%; }
       #min-menu .header-signin .btn-def a {
         width: 100%; }
-    #min-menu .header-signin .img {
-      height: 30px;
-      width: 30px;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      background-position: center;
-      -webkit-background-size: cover;
-      background-size: cover; }
+    #min-menu .header-signin.username-content {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+
+.username-content {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .username-content .img {
+    height: 30px;
+    width: 30px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border: 1px solid #868686; }
+  .username-content .username-title {
+    margin-left: 15px;
+    max-width: 210px; }
+    .username-content .username-title p {
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+
+#mm-blocker {
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .min-menu-lang li {
   text-decoration: underline; }
