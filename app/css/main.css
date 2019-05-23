@@ -8442,7 +8442,8 @@ input[type="radio"]:checked ~ .radio-style-1, input[type="radio"]:checked ~ .rad
 .search-container {
   width: 100%; }
   .search-container .search-nav-content {
-    min-width: 480px; }
+    min-width: 480px;
+    height: 36px; }
     .search-container .search-nav-content input {
       width: 100%; }
   .search-container .search-container-wrapper {
@@ -9158,7 +9159,7 @@ figcaption {
   background-position: center center; }
   .bnr-carousel figure {
     overflow: hidden;
-    height: 175px;
+    height: 222px;
     -webkit-transition: all 1.8s ease;
     -o-transition: all 1.8s ease;
     transition: all 1.8s ease;
@@ -9248,7 +9249,7 @@ figcaption {
   .bnr-carousel .carousel-content {
     position: relative; }
     .bnr-carousel .carousel-content .align-i-center {
-      height: 175px; }
+      height: 222px; }
   .bnr-carousel .bg-shadow {
     display: none;
     pointer-events: none;
