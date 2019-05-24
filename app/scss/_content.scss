@@ -533,6 +533,19 @@ figcaption{
 			padding: 15px 15px;
 		}
 	}
+	.contacts-info{
+		.form-success{
+			display: none;
+			.fa{
+				color: $color-3;
+			}
+		}
+		form[style="display: none;"]{
+			& ~ .form-success{
+				display: block;
+			}
+		}
+	}
 }
 
 

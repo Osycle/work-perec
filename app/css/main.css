@@ -8366,7 +8366,7 @@ input[type="radio"]:checked ~ .radio-style-1, input[type="radio"]:checked ~ .rad
   -ms-transform: auto;
   transform: auto;
   background-color: #212121;
-  color: #868686; }
+  color: lightgray; }
 
 .header-top-content {
   height: 40px;
@@ -8744,7 +8744,7 @@ ul[class*="sub-menu"] {
     border: 1px solid #868686; }
   .username-content .username-title {
     margin-left: 15px;
-    max-width: 210px; }
+    max-width: 120px; }
     .username-content .username-title p {
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
@@ -9514,6 +9514,14 @@ figcaption {
   @media (max-width: 991px) {
     .contacts .wrapper {
       padding: 15px 15px; } }
+
+.contacts .contacts-info .form-success {
+  display: none; }
+  .contacts .contacts-info .form-success .fa {
+    color: #4584ee; }
+
+.contacts .contacts-info form[style="display: none;"] ~ .form-success {
+  display: block; }
 
 .entities-filter .field-item {
   display: -webkit-box;

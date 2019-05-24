@@ -305,7 +305,7 @@
 				if (minMenu) minMenu.removeClass("scrolled");
 			} //.originalEvent.wheelDelta
 
-			if( $(".entity-bar-area").length < 0 ){
+			if( $(".entity-bar-area").length > 0 ){
 
 				var entityBarArea = $(".entity-bar-area");
 				var entityBar = $(".entity-bar");

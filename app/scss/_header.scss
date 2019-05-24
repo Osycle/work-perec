@@ -51,7 +51,7 @@ $header-min-menu: 70px;
 	width: 100%;
 	transform: auto;
 	background-color: $color-gray-5;
-	color: $color-gray-3;
+	color: lighten($color-gray-3, 30%);
 }
 .header-top-content{
 	height: $header-top-height;
@@ -428,7 +428,7 @@ ul[class*="sub-menu"]{
 	}
 	.username-title{
 		margin-left: 15px;
-		max-width: 210px;
+		max-width: 120px;
 		p{
 			text-overflow: ellipsis;
 			overflow: hidden;
