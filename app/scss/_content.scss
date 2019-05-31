@@ -373,6 +373,9 @@ figcaption{
 		font-size: 34px;
 		border-bottom: 2px solid $color-3;
 	}
+	@media (min-width: 992px) {
+		display: none;
+	}
 }
 .main-search{
 	.search-nav-content{
