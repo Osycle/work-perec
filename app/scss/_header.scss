@@ -106,7 +106,6 @@ $header-min-menu: 70px;
 .search-container{
 	width: 100%;
 	.search-nav-content{
-		min-width: 480px;
 		height: 36px;
 		input{
 			width: 100%;
@@ -122,6 +121,9 @@ $header-min-menu: 70px;
 		}
 	}
 	@media (min-width: 992px) {
+		.search-nav-content{
+			min-width: 480px;
+		}
 		.btn-def{
 			margin-left: 10px;
 		}
@@ -412,6 +414,7 @@ ul[class*="sub-menu"]{
 		&.username-content{
 			justify-content: center;
 			align-items: center;
+			padding-top: 10px;
 		}
 	}
 }
@@ -432,6 +435,13 @@ ul[class*="sub-menu"]{
 		p{
 			text-overflow: ellipsis;
 			overflow: hidden;
+		}
+		a{
+			text-overflow: ellipsis;
+    	overflow: hidden;
+    	max-width: 120px;
+    	display: block;
+    	white-space: nowrap;
 		}
 	}
 }
