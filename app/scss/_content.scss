@@ -350,6 +350,30 @@ figcaption{
 		width: 100%;
 	}
 }
+.main-info{
+	font-weight: 500;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 0 15px;
+	text-align: right;
+	a{
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 15px;
+	}
+	.fa{
+		vertical-align: middle;
+		line-height: 100%;
+		font-size: 42px;
+		color: $color-1;
+		margin-right: 15px;
+	}
+	big{
+		font-weight: 700;
+		font-size: 34px;
+		border-bottom: 2px solid $color-3;
+	}
+}
 .main-search{
 	.search-nav-content{
 		@media (max-width: 991px) {
